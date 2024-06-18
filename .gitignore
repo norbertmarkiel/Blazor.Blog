@@ -1,0 +1,11 @@
+.vs/
+Blazor.Blog.Client/bin/
+Blazor.Blog.Client/obj/
+Blazor.Blog/obj/
+Data.Models/obj/
+Data/bin/
+Data/obj/
+SharedComponents/obj/
+SharedComponents/bin/
+Data.Models/bin/
+Blazor.Blog/bin/
