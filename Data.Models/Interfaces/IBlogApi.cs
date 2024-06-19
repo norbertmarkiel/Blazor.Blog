@@ -3,8 +3,7 @@
     public interface IBlogApi
     {
         Task<int> GetBlogPostCountAsync();
-        Task<List<BlogPost>> GetBlogPostsAsync(int numberofposts, int
-        startindex);
+        Task<List<BlogPost>> GetBlogPostsAsync(int numberofposts, int startindex);
         Task<List<Category>> GetCategoriesAsync();
         Task<List<Tag>> GetTagsAsync();
         Task<List<Comment>> GetCommentsAsync(string blogPostId);
