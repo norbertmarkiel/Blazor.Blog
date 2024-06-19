@@ -1,4 +1,6 @@
 using Blazor.Blog.Components;
+using Blazor.Blog.Endpoints;
+using BlazorWebApp.Endpoints;
 using Data;
 using Data.Models.Interfaces;
 
@@ -44,5 +46,9 @@ app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(typeof(Blazor.Blog.Client._Imports).Assembly)
     .AddAdditionalAssemblies(typeof(SharedComponents.Pages.Home).Assembly);
+
+app.MapBlogPostApi();
+app.MapCategoryApi();
+app.MapTagApi();
 
 app.Run();

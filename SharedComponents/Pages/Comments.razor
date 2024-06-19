@@ -15,7 +15,7 @@
 
 @if (Model != null)
 {
-<EditForm method="post" Model="@Model" OnValidSubmit="@ValidSubmitAsync" FormName="CommentForm">
+<EditForm Enhance method="post" Model="@Model" OnValidSubmit="@ValidSubmitAsync" FormName="CommentForm">
 <DataAnnotationsValidator />
 <CustomCssClassProvider
 ProviderType="BootstrapFieldCssClassProvider" />
