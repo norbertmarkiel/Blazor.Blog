@@ -6,7 +6,7 @@
 @using Markdig; 
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Routing
-
+@attribute [Authorize]
 <EditForm Model="Post" OnValidSubmit="SavePost">
 <DataAnnotationsValidator />
 <CustomCssClassProvider ProviderType="BootstrapFieldCssClassProvider" />

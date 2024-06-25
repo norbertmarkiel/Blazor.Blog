@@ -1,7 +1,7 @@
 ﻿using Data.Models;
 using Data.Models.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-namespace BlazorWebApp.Endpoints;
+namespace Blazor.Blog.Endpoints;
 public static class CommentEndpoints
 {
     public static void MapCommentApi(this WebApplication app)

@@ -1,7 +1,7 @@
 ﻿using Data.Models;
 using Data.Models.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-namespace BlazorWebApp.Endpoints;
+namespace Blazor.Blog.Endpoints;
 public static class TagEndpoints
 {
     public static void MapTagApi(this WebApplication app)
@@ -19,7 +19,7 @@ public static class TagEndpoints
             return Results.Ok(await api.SaveTagAsync(item));
         }).RequireAuthorization(); 
         
-        app.MapDelete("/api/Tags/{ *id}",async (IBlogApi api, string id) =>
+        app.MapDelete("/api/Tags/{*id}",async (IBlogApi api, string id) =>
         {
             await api.DeleteTagAsync(id);
             return Results.Ok();

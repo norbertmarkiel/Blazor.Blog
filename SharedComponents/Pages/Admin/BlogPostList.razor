@@ -1,6 +1,7 @@
 ﻿@page "/admin/blogposts"
 @attribute [StreamRendering(true)]
 @inject IBlogApi _api
+@attribute [Authorize]
 <a href="/admin/blogposts/new">New blog post</a>
 @if (posts?.Count == 0)
 {

@@ -1,4 +1,13 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿<AuthorizeView Roles="Administrator">
+    <Authorized>
+        <p style="background-color:black;color:white;">Hi admin!</p>
+    </Authorized>
+    <NotAuthorized>
+        You are not an admin =(
+    </NotAuthorized>
+</AuthorizeView>
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">Blazor.Blog</a>
     </div>

@@ -27,7 +27,7 @@ namespace Blazor.Blog.Client
         {
             var httpclient = _factory.CreateClient("Api");
             return await httpclient.
-            GetFromJsonAsync<List<BlogPost>>($"/api/BlogPosts?numberofposts={ numberofposts}&startindex={ startindex}");
+            GetFromJsonAsync<List<BlogPost>>($"/api/BlogPosts?numberofposts={numberofposts}&startindex={startindex}");
         }
 
         public async Task<BlogPost?> SaveBlogPostAsync(BlogPost item)

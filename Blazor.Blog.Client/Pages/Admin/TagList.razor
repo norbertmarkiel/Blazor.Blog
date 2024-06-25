@@ -1,11 +1,13 @@
 ﻿@page "/admin/tags"
-@rendermode InteractiveServer
+@rendermode InteractiveWebAssembly
 @using Data.Models
 @using Data.Models.Interfaces
+@using Microsoft.AspNetCore.Authorization
 @using SharedComponents
 @using SharedComponents.ReusableComponents
-@inject IBlogApi _api 
 
+@inject IBlogApi _api 
+@attribute [Authorize]
 <h3>Tags</h3>
 
 <EditForm OnValidSubmit="Save" Model="Item">
